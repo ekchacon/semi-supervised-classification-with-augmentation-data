@@ -1,4 +1,14 @@
-# Augmentation data with semi-supervised methods
+# Semi-supervised methods with augmented datasets
+
+# Datasets
+
+The subsequent datasets comprise 28 x 28 pixel grayscale images. 
+
+The MNIST dataset encompasses handwritten digits (0 - 9) categorized into 10 classes, with 60,000 images designated for training and 10,000 for testing. 
+
+The Fashion dataset also features 10 classes, comprising images of Zolando’s articles such as T-Shirts, Trousers, Bags, Ankle boots, and others. It includes 60,000 and 10,000 images for training and testing, respectively.
+
+The Quickdraw bitmap dataset comprises 345 distinct drawing classes and a total of 50 million examples. For our experiments, we have selected a subset of 10 classes, containing 700,000 training examples and 25,000 test examples.
 
 # The aim of the project
 
