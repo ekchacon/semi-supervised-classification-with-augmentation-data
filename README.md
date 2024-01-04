@@ -2,7 +2,7 @@
 
 # Datasets
 
-The subsequent datasets comprise 28 x 28 pixel grayscale images. 
+The subsequent datasets comprise 28 x 28 pixel grayscale images.
 
 The MNIST dataset encompasses handwritten digits (0 - 9) categorized into 10 classes, with 60,000 images designated for training and 10,000 for testing. 
 
