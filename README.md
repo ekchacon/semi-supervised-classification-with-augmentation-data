@@ -21,7 +21,7 @@ Data augmentation involves applying a series of conventional transformation tech
 
 <!--We aim to further improve the performance of our proposed method on regular and large datasets by applying data augmentation. Our proposed method has demonstrated to yield superior results compared to other learning techniques when using non-augmented datasets. -->
 
-Our objective is to enhance the performance of our proposed methodology on both regular and large datasets through the implementation of data augmentation. The demonstrated superiority of our proposed method compared to other learning techniques is noteworthy, particularly in the context of non-augmented datasets, which are [Semi-supervised Classification with regular datasets](https://github.com/ekchacon/semi-supervised-regular-size-datasets.git) and [Semi-supervised Classification with large dataset](https://github.com/ekchacon/semi-supervised-large-size-dataset.git)
+Our objective is to enhance the performance of our proposed methodology on both regular and large datasets through the implementation of data augmentation. The demonstrated superiority of our proposed method compared to other learning techniques is noteworthy, particularly in the context of non-augmented datasets, which can be seen in the projects [Semi-supervised Classification with regular datasets](https://github.com/ekchacon/semi-supervised-regular-size-datasets.git) and [Semi-supervised Classification with large dataset](https://github.com/ekchacon/semi-supervised-large-size-dataset.git).
 
 # Dataset configuration for experiments
 
@@ -97,3 +97,7 @@ The Augmented FASHION dataset is utilized for comparative analysis of our propos
 The performance outcomes of the proposed method, in comparison to alternative methods, using the Augmented Quickdraw dataset are visually presented in the coming figure. Within the dataset size range of 0.33% to 1.67%, our method exhibits superior performance, achieving accuracy rates of 85% and slightly exceeding 88%, respectively. Similarly, our method maintains a slight advantage over the alternatives, with accuracy results of approximately 90% and just above 92% in the dataset size range of 3.33% to 16.67% within various labeled training scenarios.
 
 <img width="737" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/9a7adb64-1e1f-42bd-a55d-c47b7ae10617">
+
+# Discussion
+
+Further enhancement in performance is achievable through the incorporation of augmentation techniques. We leveraged augmented versions of MNIST, FASHION, and Quickdraw datasets, resulting in significant improvements in our method’s accuracy. Notably, for the MNIST dataset, in the most challenging scenario with only 0.33% of training examples, the accuracy surged from approximately 78% using the standard dataset to around 95% when utilizing the augmented version. It is noteworthy that this heightened accuracy is achieved through the application of augmentation techniques to the initial 200 labeled examples. For FASHION and Quickdraw datasets, there was also an improvement in model performance at 0.33%, albeit to a lesser extent.
