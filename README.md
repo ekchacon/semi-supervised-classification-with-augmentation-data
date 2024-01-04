@@ -58,9 +58,32 @@ We selected the 16.67% (60k examples) of the training subset from the previous t
 
 Initially, we compare the results of the self-training layer-wise method between the augmented datasets and their non-augmented counterparts. Subsequently, we provide a comparative analysis of the results obtained by all methods when using the augmented datasets exclusivel. 
 
-## Results for MNIST dataset
+## Augmented compared to non-augmented datasets (MNIST, FASHION and Quickdraw)
 
-## Results for FASHION dataset
+The following figure presents the accuracy outcomes of the proposed method trained on the MNIST dataset and the Augmented MNIST dataset. Notably, the chart reveals that the method achieved higher performance with the Augmented MNIST dataset, surpassing the results obtained with the standard MNIST dataset during the initial portion of training labeled examples. However, as the percentage of the training dataset increased, the accuracy results for both datasets converged, demonstrating similarity in performance during the latter stages of training.
 
-## Results for Quickdraw Bitmap dataset
+<img width="737" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/7c97aa4b-c4b0-4b31-8207-5205af9fd411">
 
+The performance of the proposed method when applied to the FASHION and Augmented FASHION datasets is presented in the subsequent figure. Overall, the method consistently exhibited higher accuracy with the Augmented FASHION dataset compared to the original FASHION dataset, irrespective of the percentage of labeled examples used for training
+
+<img width="737" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/c443dd5a-c29c-4406-91b2-89f97faa02da">
+
+The performance of the self-training layer-wise approach when applied to the Quickdraw dataset and Augmented Quickdraw dataset is presented in the coming figure. Notably, both datasets exhibited a consistent increase in accuracy across various dataset sizes. However, the performance of the method with the Augmented Quickdraw dataset consistently outperformed that with the standard Quickdraw dataset.
+
+<img width="738" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/109397ce-5134-4f01-a67d-63e8dee2cf8b">
+
+## All Methods with augmented datasets (MNIST, FASHION and Quickdraw)
+
+We present a comparative analysis between the proposed self-training layer-wise method and other learning techniques when exclusively trained on the augmented dataset versions. Specifically, we compare self-training layer-wise with self-training, semi-supervised, and supervised methods across diverse scenarios involving varying labeled dataset sizes.
+
+The subsequent figure presents a comprehensive analysis of our method’s performance and that of other techniques when trained on various labeled dataset sizes derived from the Augmented MNIST dataset. In the dataset size range of 0.33% to 1.67%, our method consistently outperforms the alternatives, achieving accuracy rates of approximately 94% and 97%, respectively. However, as the labeled dataset size increases to the range of 3.33% to 16.67%, our method’s accuracy results align closely with those of the alternative methods, typically hovering around 99%.
+
+<img width="737" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/e3a72b44-31db-4423-9a4c-b12e9551ab1b">
+
+The Augmented FASHION dataset is utilized for comparative analysis of our proposed method against alternative approaches, as depicted in the following figure. Our self-training layer-wise methodology surpasses the alternatives within the dataset size range of 0.33% to 1.50%, achieving accuracy rates that climb from 72% to 81%. Although the accuracy result does not exhibit superiority at 1.67%, it maintains its advantage and steadily increases from 85% to just under 90% within the dataset size range of 3.33% to 16.67%.
+
+<img width="738" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/ce65de72-4f5e-4d9a-9000-029850afcb81">
+
+The performance outcomes of the proposed method, in comparison to alternative methods, using the Augmented Quickdraw dataset are visually presented in the coming figure. Within the dataset size range of 0.33% to 1.67%, our method exhibits superior performance, achieving accuracy rates of 85% and slightly exceeding 88%, respectively. Similarly, our method maintains a slight advantage over the alternatives, with accuracy results of approximately 90% and just above 92% in the dataset size range of 3.33% to 16.67% within various labeled training scenarios.
+
+<img width="737" alt="image" src="https://github.com/ekchacon/augmentation-data-with-semi-supervised-methods/assets/46211304/9a7adb64-1e1f-42bd-a55d-c47b7ae10617">
