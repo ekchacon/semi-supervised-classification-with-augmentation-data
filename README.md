@@ -1,4 +1,4 @@
-# Semi-supervised methods with augmented datasets
+# Semi-supervised classification with augmented datasets
 
 # Datasets
 
