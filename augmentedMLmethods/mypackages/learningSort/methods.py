@@ -324,6 +324,10 @@ def preTrainingAugmented(train,
       #L2ToPretrain[1]( L1Pretrained [0] and [1]Dense)
       model.layers[0].set_weights(pretrainedModel.layers[0].get_weights())
       model.layers[2].set_weights(pretrainedModel.layers[1].get_weights())
+
+      #print("***")
+      model.layers[0].trainable = False
+      #model.summary()
     
     ##if 3L then Load
     if L == 3:
@@ -333,6 +337,11 @@ def preTrainingAugmented(train,
       model.layers[0].set_weights(pretrainedModel.layers[0].get_weights())
       model.layers[1].set_weights(pretrainedModel.layers[1].get_weights())
       model.layers[3].set_weights(pretrainedModel.layers[2].get_weights())
+
+      #print("***")
+      model.layers[0].trainable = False
+      model.layers[1].trainable = False
+      #model.summary()
     
     #steps computation for training and test
     stepsPerEpoch = math.floor(numExamTrain/trainBATCH_SIZE)
